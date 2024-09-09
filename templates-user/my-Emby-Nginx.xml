@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Emby-Nginx</Name>
+  <Repository>nginx:latest</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Network:Web Network:Proxy</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/nginx.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Nginx_E.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507531</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="Port" Target="8091" Default="" Mode="tcp" Description="http" Type="Port" Display="always" Required="true" Mask="false">8091</Config>
+  <Config Name="Path" Target="/etc/nginx/nginx.conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Emby-Nginx/nginx.conf</Config>
+  <Config Name="Path1" Target="/var/cache/nginx/emby" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Emby-Nginx/embyCache</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Host Path 3" Target="/etc/nginx/conf.d" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Emby-Nginx/conf.d</Config>
+  <Config Name="Host Path 4" Target="/var/log/nginx" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Emby-Nginx/log</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>

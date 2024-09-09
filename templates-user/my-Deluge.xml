@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Deluge</Name>
+  <Repository>linuxserver/deluge:2.1.1-libtorrentv1</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/deluge</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-deluge/issues/new/choose</Support>
+  <Project>http://deluge-torrent.org/</Project>
+  <Overview/>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8112]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/deluge.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725689087</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8112" Default="8112" Mode="tcp" Description="Port for webui" Type="Port" Display="always" Required="true" Mask="false">8112</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="Port: 58846" Target="58846" Default="58846" Mode="tcp" Description="Default deluged port for thin client connectivity" Type="Port" Display="always" Required="false" Mask="false">58846</Config>
+  <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/disk2/media/downloads/</Config>
+  <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Mode="{3}" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false">error</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/cache/appdata/deluge" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/Deluge/config</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jackett</Name>
+  <Repository>linuxserver/jackett:latest</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/jackett/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/44235-support-linuxserverio-jackett/</Support>
+  <Project>https://github.com/Jackett/Jackett</Project>
+  <Overview>Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9117]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/jackett.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Jackett_A.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507559</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="9117" Default="9117" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="TimeZone" Target="TZ" Default="Asia/Shanghai" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.jackett.entryPoints" Target="traefik.http.routers.jackett.entryPoints" Default="https" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jackett" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/Jackett/config</Config>
+</Container>

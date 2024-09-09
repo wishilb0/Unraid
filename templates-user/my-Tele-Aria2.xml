@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tele-Aria2</Name>
+  <Repository>p3terx/tele-aria2:latest</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/tele-aria2</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/aria2c-bot.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508313</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/config.json" Target="/config.json" Default="" Mode="ro,shared" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/scripts/tele-aria2-conf.json</Config>
+</Container>

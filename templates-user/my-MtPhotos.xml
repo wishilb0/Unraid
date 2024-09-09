@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MtPhotos</Name>
+  <Repository>mtphotos/mt-photos:latest</Repository>
+  <Registry>https://hub.docker.com/r/mtphotos/mt-photos</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://mtmt.tech/contact</Support>
+  <Project>https://mtmt.tech</Project>
+  <Overview>&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Overview>
+  <Category>Productivity: MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PORT:8063]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Mtphotos_C.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507577</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="&#x7AEF;&#x53E3;&#x6620;&#x5C04;1" Target="8063" Default="8063" Mode="tcp" Description="MT Photos Web&#x670D;&#x52A1;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="{8}">8063</Config>
+  <Config Name="&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="/config" Default="/mnt/user/appdata/MtPhotos_config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/cache/appdata/MtPhotos</Config>
+  <Config Name="App&#x5907;&#x4EFD;&#x7684;&#x7167;&#x7247;&#x3001;&#x89C6;&#x9891;&#x76EE;&#x5F55;" Target="/upload" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/cache/Photos/&#x5BB6;&#x5EAD;&#x76F8;&#x518C;/</Config>
+  <Config Name="&#x81EA;&#x52A8;&#x626B;&#x63CF;&#x56FE;&#x5E93;&#x95F4;&#x9694;" Target="SCAN_INTERVAL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1440</Config>
+  <Config Name="RAW_SUPPORT" Target="RAW_SUPPORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">open</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="&#x65F6;&#x95F4;&#x7EBF;&#x6A21;&#x5F0F;&#x4E2D;&#x5355;&#x5929;&#x663E;&#x793A;&#x7684;&#x7167;&#x7247;&#x6570;&#x91CF;&#x4E0A;&#x9650;" Target="DAY_MAX_FILE_NUM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">999</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="/dev/dri/" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/</Config>
+</Container>

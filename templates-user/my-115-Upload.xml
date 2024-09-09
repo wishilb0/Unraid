@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>115-Upload</Name>
+  <Repository>ilovn/115upload:latest</Repository>
+  <Registry>https://hub.docker.com/r/ilovn/115upload/tags</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ilovn/115upload/tags</Support>
+  <Project>https://hub.docker.com/r/ilovn/115upload/tags</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:9081/uploads/2024/08/26/115-upload.png</Icon>
+  <ExtraParams>--log-driver=syslog</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1724831197</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/usr/src/app/115-cookies.txt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-Upload/115-cookies.txt</Config>
+  <Config Name="Host Path 2" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="Host Path 3" Target="/mnt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt</Config>
+  <Config Name="SRC_PATH" Target="SRC_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/mnt/disk2/media/video</Config>
+  <Config Name="DST_PATH" Target="DST_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/Media</Config>
+  <Config Name="MAX_WORKERS" Target="MAX_WORKERS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="INTERVAL" Target="INTERVAL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+  <Config Name="USE_API" Target="USE_API" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="API_SERVER" Target="API_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.100:8092/api/receive</Config>
+  <Config Name="Access_Token" Target="Access_Token" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">lb565287449</Config>
+</Container>

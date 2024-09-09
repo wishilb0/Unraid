@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>115-Media302</Name>
+  <Repository>ilovn/media302:latest</Repository>
+  <Registry>https://hub.docker.com/r/ilovn/media302</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ilovn/media302</Support>
+  <Project>https://hub.docker.com/r/ilovn/media302</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8090]/</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:9081/uploads/2024/08/25/media302.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725606105</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="emby&#x670D;&#x52A1;&#x5730;&#x5740;" Target="UPSTREAM_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.100:6909</Config>
+  <Config Name="Host Path 1" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="Host Port 1" Target="8090" Default="8090" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8090</Config>
+  <Config Name="Emby&#x670D;&#x52A1;&#x5668;&#x7684;API TOKEN" Target="EMBY_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">831fb9165b364ee9925d59cd954feebd</Config>
+</Container>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ChineseSubFinder</Name>
+  <Repository>allanpk716/chinesesubfinder:v0.55.3</Repository>
+  <Registry>https://hub.docker.com/r/allanpk716/chinesesubfinder</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/allanpk716/ChineseSubFinder/blob/docs/DesignFile/v0.20%E6%95%99%E7%A8%8B/00.Docker%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.md</Support>
+  <Project>https://github.com/allanpk716/ChineseSubFinder</Project>
+  <Overview>&#x672C;&#x9879;&#x76EE;&#x7684;&#x521D;&#x8877;&#x4EC5;&#x4EC5;&#x662F;&#x60F3;&#x81EA;&#x52A8;&#x5316;&#x641E;&#x5B9A;&#x9650;&#x5B9A;&#x6761;&#x4EF6;&#x4E0B;&#x4E2D;&#x6587;&#x5B57;&#x5E55;&#x4E0B;&#x8F7D;&#x3002;&#x652F;&#x6301; zimuku&#x3001;subhd&#x3001;shooter&#x3001;xunlei </Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:19035]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Chinesesubfinder_A.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725785319</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web GUI Port" Target="19035" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19035</Config>
+  <Config Name="Static Files Service Port" Target="19037" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19037</Config>
+  <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/disk2/media/</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/ChineseSubFinder/config</Config>
+  <Config Name="/app/cache" Target="/app/cache" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/ChineseSubFinder/cache</Config>
+  <Config Name="chrome" Target="/root/.cache/rod/browser" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ChineseSubFinder/browser</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK_SET" Target="UMASK_SET" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">022</Config>
+  <Config Name="PERMS" Target="PERMS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">true</Config>
+</Container>

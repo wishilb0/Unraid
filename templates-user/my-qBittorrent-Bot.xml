@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qBittorrent-Bot</Name>
+  <Repository>0one2/qbittorrent-bot:latest</Repository>
+  <Registry>https://hub.docker.com/r/0one2/qbittorrent-bot</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/qbittorrent-bot.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508244</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Path /app" Target="/app" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/qBittorrent-Bot/app</Config>
+  <Config Name="Path /downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk2/media/downloads/movie/</Config>
+</Container>

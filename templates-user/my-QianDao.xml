@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>QianDao</Name>
+  <Repository>qdtoday/qd:latest</Repository>
+  <Registry>https://github.com/qd-today/qd</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/qd-today/qd</Support>
+  <Project>https://github.com/qd-today/qd</Project>
+  <Overview>&#x5E94;&#x7528;&#x4ECB;&#x7ECD;&#xD;
+&#x7B7E;&#x5230;&#xFF08;QianDao&#xFF09; &#x2014;&#x2014; &#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x7B7E;&#x5230;&#x6846;&#x67B6; base on an HAR editor&#xD;
+&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xD;
+https://github.com/qd-today/qd&#xD;
+&#xD;
+&#xD;
+  </Overview>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/qiandao.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Qiandao_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508267</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8923</Config>
+  <Config Name="JAWSDB_MARIA_URL" Target="JAWSDB_MARIA_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mysql://qiandao:qiandao@192.168.1.100:3306/qiandao</Config>
+  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/usr/src/app/config" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /usr/src/app/config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; QianDao &#x914D;&#x7F6E;" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/QianDao/config/</Config>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; qiandao &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C; qiandao &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;&#x7EC4;" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

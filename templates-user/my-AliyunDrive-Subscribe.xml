@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AliyunDrive-Subscribe</Name>
+  <Repository>looby/aliyundrive-subscribe:latest</Repository>
+  <Registry>https://github.com/adminpass/aliyundrive-subscribe</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8002]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:9081/uploads/2024/08/31/Alidrive_A.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725091450</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="/app/conf" Target="/app/conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/AliyunDrive-Subscribe/conf/</Config>
+</Container>

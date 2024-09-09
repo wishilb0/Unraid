@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MoviePilot-OCR</Name>
+  <Repository>jxxghp/moviepilot-ocr:latest</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/moviepilot-ocr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jxxghp/moviepilot-ocr</Support>
+  <Project>https://hub.docker.com/r/jxxghp/moviepilot-ocr</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/OCR.png</Icon>
+  <ExtraParams>--hostname=moviepilot-ocr --log-driver=json-file --log-opt=max-size=5m --restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508052</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="9899" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9899</Config>
+</Container>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MariaDB</Name>
+  <Repository>lscr.io/linuxserver/mariadb</Repository>
+  <Registry>https://lsky.wishilb.com:23690/2024/05/22/Mariadb_A.png</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-mariadb/issues/new/choose</Support>
+  <Project>https://mariadb.org/</Project>
+  <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
+  <Category>Network:Other MediaApp:Other Other: Tools:Utilities</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/mariadb.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Mariadb_B.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508205</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="Set this to root password for installation (minimum 4 characters and non-alphanumeric passwords must be properly escaped)." Type="Variable" Display="always" Required="true" Mask="true">Lb565287449</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/cache/appdata/mariadb" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/MariaDB</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

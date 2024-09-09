@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Auto-lady</Name>
+  <Repository>orekiiiiiiiiiiiii/auto-lady:beta</Repository>
+  <Registry>https://hub.docker.com/r/orekiiiiiiiiiiiii/auto-lady/tags</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/orekiiiiiiiiiiiii/auto-lady/tags</Support>
+  <Project>https://hub.docker.com/r/orekiiiiiiiiiiiii/auto-lady/tags</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8043]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/auto-lady.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507311</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8043</Config>
+  <Config Name="Host Path 1" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Auto-lady/data</Config>
+</Container>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ddns-go</Name>
+  <Repository>jeessy/ddns-go</Repository>
+  <Registry>https://registry.hub.docker.com/r/jeessy/ddns-go</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/jeessy2/ddns-go</Project>
+  <Overview/>
+  <Category>Network:DNS</Category>
+  <WebUI>http://[IP]:[PORT:9876]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Ddns_A.png</Icon>
+  <ExtraParams>--log-driver json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507447</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/root" Target="/root" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Ddns-go</Config>
+  <Config Name="WebUI" Target="9876" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9876</Config>
+  <Config Name="Host Key 1" Target="-f" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">600</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>115-Bot</Name>
+  <Repository>len996/115bot:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/len996/115bot</Support>
+  <Project>https://hub.docker.com/r/len996/115bot</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/115bot.webp</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725506875</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/application.properties" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-Bot/application.properties</Config>
+  <Config Name="Host Path 2" Target="/115bot" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-Bot/</Config>
+  <Config Name="Host Key 1" Target="JAVA_OPTS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-Xms512m -Xmx1024m</Config>
+</Container>

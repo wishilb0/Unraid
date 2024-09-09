@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Watchtower</Name>
+  <Repository>containrrr/watchtower:latest-dev</Repository>
+  <Registry>https://hub.docker.com/r/containrrr/watchtower</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://containrrr.dev/watchtower/</Project>
+  <Overview/>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/Frooodle/unraid-templates/master/watchtower.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Watchtower_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--cleanup --interval 1200</PostArgs>
+  <CPUset/>
+  <DateInstalled>1725508394</DateInstalled>
+  <DonateText>You shouldn't donate, I have not made these docker images only did some config..   But if you really want to, thanks :)</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/FroodlePlex</DonateLink>
+  <Requires/>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+</Container>

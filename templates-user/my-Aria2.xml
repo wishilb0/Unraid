@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Aria2</Name>
+  <Repository>p3terx/aria2-pro:latest</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/aria2-pro</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Downloaders:</Category>
+  <WebUI>http://ariang.js.org/#!/settings/rpc/set/https/ar.wishilb.com/56528/jsonrpc/MA=</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Aria2_B.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725688068</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">0</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Aria2</Config>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/Mydata/Tempdata/</Config>
+  <Config Name="DISK_CACHE" Target="DISK_CACHE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">64M</Config>
+  <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="CUSTOM_TRACKER_URL" Target="CUSTOM_TRACKER_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://trackerslist.com/all_aria2.txt</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="Variable UMASK_SET" Target="UMASK_SET" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="Variable RPC PORT" Target="RPC_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">6800</Config>
+</Container>

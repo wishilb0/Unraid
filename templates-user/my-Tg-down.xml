@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tg-down</Name>
+  <Repository>tangyoha/telegram_media_downloader:latest</Repository>
+  <Registry>https://hub.docker.com/r/tangyoha/telegram_media_downloader</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Telegram_A.png</Icon>
+  <ExtraParams>-itd</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725506893</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8555</Config>
+  <Config Name="Host Path 1" Target="/app/downloads/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/Mydata/Pictures/</Config>
+  <Config Name="Host Path 2" Target="/app/config.yaml" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Tg-down/config.yaml</Config>
+  <Config Name="Host Path 3" Target="/app/data.yaml" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Tg-down/data.yaml</Config>
+  <Config Name="Host Path 4" Target="/app/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Tg-down/log</Config>
+  <Config Name="Host Path 5" Target="/app/sessions" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Tg-down/sessions</Config>
+  <Config Name="Host Path 6" Target="/app/temp" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Tg-down/temp</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>

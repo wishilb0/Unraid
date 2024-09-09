@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Minio</Name>
+  <Repository>ghcr.io/imagegenius/minio</Repository>
+  <Registry>https://github.com/orgs/imagegenius/packages/container/package/minio</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/imagegenius/docker-minio/issues/new/choose</Support>
+  <Project>https://min.io/</Project>
+  <Overview>MinIO is a High Performance Object Storage released under GNU Affero General Public License v3.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.</Overview>
+  <Category>Backup: Cloud: Network:Other Productivity: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:9001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/master/unraid/minio.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Minio_C.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508096</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="9001" Default="9001" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">9001</Config>
+  <Config Name="Port: 9000" Target="9000" Default="9000" Mode="tcp" Description="API Port" Type="Port" Display="always" Required="true" Mask="false">9000</Config>
+  <Config Name="MINIO_ROOT_USER" Target="MINIO_ROOT_USER" Default="minioadmin" Mode="{3}" Description="Specify the root username for MinIO" Type="Variable" Display="always" Required="true" Mask="false">wishilb</Config>
+  <Config Name="MINIO_ROOT_PASSWORD" Target="MINIO_ROOT_PASSWORD" Default="minioadmin" Mode="" Description="Specify the root password for MinIO" Type="Variable" Display="always" Required="true" Mask="true">Lb565287449</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/cache/appdata/minio" Mode="rw" Description="Appdata/Bucket Path" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/Minio/config</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>
+</Container>

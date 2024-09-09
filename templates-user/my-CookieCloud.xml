@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CookieCloud</Name>
+  <Repository>easychen/cookiecloud</Repository>
+  <Registry>https://hub.docker.com/r/easychen/cookiecloud</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/easychen/CookieCloud/issues</Support>
+  <Project>https://github.com/easychen/CookieCloud</Project>
+  <Overview>CookieCloud is a small tool that synchronizes cookies with a self-hosted server. It can synchronize browser cookies and local storage to mobile devices and the cloud. It supports end-to-end encryption and can set synchronization intervals.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8088]/cookie</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/cookiecloud/cookiecloud.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Cookiecloud_B.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507392</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="8088" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
+  <Config Name="/cookie" Target="API_ROOT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/cookie</Config>
+  <Config Name="/data/api/data" Target="/data/api/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/CookieCloud/data</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>

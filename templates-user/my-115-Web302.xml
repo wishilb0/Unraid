@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>115-Web302</Name>
+  <Repository>wishilb/115-web302:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/115-Web302.png</Icon>
+  <ExtraParams>-itd</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725602086</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8756</Config>
+  <Config Name="Host Path 1" Target="/etc/web_115_302" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-Web302/</Config>
+  <Config Name="path_persistence_commitment" Target="path_persistence_commitment" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TinyMediaManager5</Name>
+  <Repository>tinymediamanager/tinymediamanager:5-nightly</Repository>
+  <Registry>https://hub.docker.com/r/tinymediamanager/tinymediamanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/tinymediamanager/tinymediamanager</Support>
+  <Project>https://hub.docker.com/r/tinymediamanager/tinymediamanager</Project>
+  <Overview>tinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and macOS (and possible more OS).</Overview>
+  <Category>MediaApp:Video MediaApp:Other MediaServer:Video MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:4000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/hussainalhaddad/docker-templates/master/tinymediamanager/tinymediamanager.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Tmm_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508335</DateInstalled>
+  <DonateText>If you like my work please consider donating.</DonateText>
+  <DonateLink>https://www.paypal.me/husainalhadad</DonateLink>
+  <Requires/>
+  <Config Name="Timezone" Target="TZ" Default="Asia/Bahrain" Mode="" Description="Full list:&#13;&#10;&#13;&#10;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">Asia/Bahrain</Config>
+  <Config Name="WebUI port" Target="4000" Default="4000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4000</Config>
+  <Config Name="Host Port 2" Target="5900" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5903</Config>
+  <Config Name="ALLOW_DIRECT_VNC" Target="ALLOW_DIRECT_VNC" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Host Path 1" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/addons/</Config>
+  <Config Name="ConfigDir" Target="/data" Default="/mnt/cache/appdata/TinyMediaManager/data" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/TinyMediaManager/data</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
+</Container>

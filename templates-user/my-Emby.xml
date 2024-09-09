@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Emby</Name>
+  <Repository>amilys/embyserver:beta</Repository>
+  <Registry>https://hub.docker.com/r/amilys/embyserver</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://github.com/linuxserver/docker-emby/issues/new/choose</Support>
+  <Project>https://emby.media/</Project>
+  <Overview>Emby(https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.</Overview>
+  <Category>MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:8096]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Emby_B.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=10m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507512</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8096" Default="" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false">6909</Config>
+  <Config Name="Port: 8920" Target="8920" Default="" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
+  <Config Name="Path: /data" Target="/strm" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/strm</Config>
+  <Config Name="/dev/dri" Target="{1}" Default="/dev/dri" Mode="" Description="Only needed if you want to use your Intel or AMD GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="/transcode" Target="/transcode" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Emby/transcode</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.emby.entryPoints" Target="traefik.http.routers.emby.entryPoints" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="Host Key 2" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="Emby data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/Emby/config/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

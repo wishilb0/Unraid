@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mdcx</Name>
+  <Repository>stainless403/mdcx-builtin-webtop-base:latest</Repository>
+  <Registry>https://hub.docker.com/r/stainless403/mdcx-builtin-webtop-base/tags</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/stainless403/mdcx-builtin-webtop-base/tags</Support>
+  <Project>https://hub.docker.com/r/stainless403/mdcx-builtin-webtop-base/tags</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>https://mdcx.wishilb.com:56528</WebUI>
+  <TemplateURL/>
+  <Icon>https://lsky.wishilb.com:56528/2024/05/22/Mdcx_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1723169662</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">13010</Config>
+  <Config Name="Host Port 2" Target="3389" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Mdcx/data</Config>
+  <Config Name="Host Path 2" Target="/mdcx-config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Mdcx/mdcx-config</Config>
+  <Config Name="Host Path 3" Target="/app/Log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Mdcx/logs</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="AUTO-LOGIN" Target="AUTO-LOGIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Host Path 4" Target="/movies" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk2/media/downloads/</Config>
+  <Config Name="AUTO_LOGIN" Target="AUTO_LOGIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="PYPI_MIRROR" Target="PYPI_MIRROR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://pypi.doubanio.com/simple</Config>
+  <Config Name="PYQT5_VERSION" Target="PYQT5_VERSION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5.15.6</Config>
+  <Config Name="Host Path 6" Target="/mnt/addons" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/addons</Config>
+  <Config Name="Host Path 7" Target="/strm" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/strm</Config>
+  <Config Name="Host Path 7" Target="/app/MDCx.config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/Mdcx/mdcx-config/MDCx.config</Config>
+</Container>

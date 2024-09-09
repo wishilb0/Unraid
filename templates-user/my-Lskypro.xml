@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Lskypro</Name>
+  <Repository>halcyonazure/lsky-pro-docker:latest</Repository>
+  <Registry>https://hub.docker.com/r/coldpig/lskypro-docker/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/lsky-org/lsky-pro</Project>
+  <Overview>Lsky Pro &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x56FE;&#x5E8A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x7684;&#x653E;&#x56FE;&#x7247;&#x4E0A;&#x5E8A;&#x5230; Lsky Pro &#x4E0A;&#x5E76;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x94FE;&#x63A5;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x6B64;&#x94FE;&#x63A5;&#x8FDB;&#x884C;&#x5206;&#x4EAB;&#x6216;&#x6DFB;&#x52A0;&#x5230;&#x4F60;&#x7684;&#x6587;&#x6863;&#x4E2D;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x672C;&#x5730;&#x56FE;&#x7247;&#x3002;&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8089]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Lskypro_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725508165</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="&#x56FE;&#x7247;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/Lskypro/data</Config>
+  <Config Name="ASSET_URL" Target="ASSET_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="WEB_UI" Target="8089" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8089</Config>
+</Container>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Chrome</Name>
+  <Repository>lscr.io/linuxserver/chromium</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/chromium</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-chromium/issues/new/choose</Support>
+  <Project>https://www.chromium.org/chromium-projects/</Project>
+  <Overview>Chromium(https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</Overview>
+  <Category>Other:</Category>
+  <WebUI>https://chrome.wishilb.com:56528</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/chromium.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Chrome_A.png</Icon>
+  <ExtraParams>--shm-size=1gb</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725688292</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Chromium desktop gui." Type="Port" Display="always" Required="true" Mask="false">8745</Config>
+  <Config Name="CHROME_CLI" Target="CHROME_CLI" Default="https://www.linuxserver.io/" Mode="{3}" Description="Specify one or multiple Chromium CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false">https://www.linuxserver.io/</Config>
+  <Config Name="Host Key 2" Target="/var/run/docker.sock" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="/dev/dri" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">linuxserver/mods:universal-package-install</Config>
+  <Config Name="INSTALL_PACKAGES" Target="INSTALL_PACKAGES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">fonts-noto-cjk</Config>
+  <Config Name="LC_ALL" Target="LC_ALL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">zh_CN.UTF-8</Config>
+  <Config Name="TITLE" Target="TITLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Chrome</Config>
+  <Config Name="Host Path 1" Target="/config/Downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/Mydata/Tempdata/</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/cache/appdata/chromium" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/Chrome/config/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

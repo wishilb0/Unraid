@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qBittorrent-Pt</Name>
+  <Repository>nevinee/qbittorrent:latest-iyuu</Repository>
+  <Registry>https://hub.docker.com/r/nevinee/qbittorrent/tags</Registry>
+  <Network>eth1</Network>
+  <MyIP>192.168.1.92</MyIP>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.qbittorrent.org/</Project>
+  <Overview/>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Qbittorrent_A.png</Icon>
+  <ExtraParams>--log-driver=json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725795362</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="&#x4E0B;&#x8F7D;&#x8DEF;&#x5F84;" Target="/media/downloads/" Default="" Mode="rw" Description="&#x4E0B;&#x8F7D;&#x8DEF;&#x5F84;&#x6620;&#x5C04;" Type="Path" Display="always" Required="true" Mask="false">/mnt/disk2/media/downloads/</Config>
+  <Config Name="&#x7F51;&#x9875;&#x754C;&#x9762; WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="BT_PORT" Target="BT_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">59862</Config>
+  <Config Name="QB_USERNAME" Target="QB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">wishilb</Config>
+  <Config Name="QB_PASSWORD" Target="QB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">xu2BipAXpPbuJe</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai	</Config>
+  <Config Name="DL_FINISH_NOTIFY" Target="DL_FINISH_NOTIFY" Default="" Mode="" Description="&#x662F;&#x5426;&#x5728;&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x65F6;&#x5411;&#x8BBE;&#x5B9A;&#x7684;&#x901A;&#x77E5;&#x6E20;&#x9053;&#x53D1;&#x9001;&#x79CD;&#x5B50;&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x7684;&#x901A;&#x77E5;&#x6D88;&#x606F;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="TRACKER_ERROR_COUNT_MIN" Target="TRACKER_ERROR_COUNT_MIN" Default="" Mode="" Description="&#x5728;&#x68C0;&#x6D4B;&#x5230;tracker&#x51FA;&#x9519;&#x7684;&#x79CD;&#x5B50;&#x6570;&#x91CF;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x7ED9;&#x8BBE;&#x7F6E;&#x7684;&#x901A;&#x77E5;&#x6E20;&#x9053;&#x53D1;&#x9001;&#x901A;&#x77E5;" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="IYUU_TOKEN" Target="IYUU_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">IYUU32047T10fe73a95302ea1d58f8a5d365245ac6651a817a</Config>
+  <Config Name="CATEGORY_OR_TAG" Target="CATEGORY_OR_TAG" Default="" Mode="" Description="4.3.9&#x53CA;4.5.0+&#x53EF;&#x7528;&#xFF0C;&#x5F53;ENABLE_AUTO_CATEGORY=true&#x65F6;&#xFF0C;&#x63A7;&#x5236;&#x81EA;&#x52A8;&#x5206;&#x7C7B;&#x662F;qBittorrent&#x4E2D;&#x7684;&#x201C;&#x5206;&#x7C7B;&#x201D;&#x8FD8;&#x662F;&#x201C;&#x6807;&#x7B7E;&#x201D;&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;category&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#x4E3A;&#x201C;&#x5206;&#x7C7B;&#x201D;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;tag&#x4E3A;&#x201C;&#x6807;&#x7B7E;&#x201D;&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;tag&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x6807;&#x7B7E;&#x4E0D;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x65E0;&#x6CD5;&#x7B5B;&#x9009;&#x51FA;&#x6CA1;&#x6709;&#x6253;&#x4E0A;tracker&#x6807;&#x7B7E;&#x7684;&#x79CD;&#x5B50;&#xFF0C;&#x6240;&#x4EE5;&#x8FD0;&#x884C;auto-cat -a&#x548C;auto-cat -A&#x90FD;&#x5C06;&#x5BF9;&#x5168;&#x90E8;&#x79CD;&#x5B50;&#x6309;tracker&#x6253;&#x6807;&#x7B7E;&#xFF0C;&#x79CD;&#x5B50;&#x591A;&#x65F6;&#x6BD4;&#x8F83;&#x8017;&#x65F6;&#xFF1B;&#x800C;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;category&#x65F6;&#xFF0C;&#x8FD0;&#x884C;auto-cat -a&#x5C31;&#x53EA;&#x5BF9;&#x672A;&#x5206;&#x7C7B;&#x79CD;&#x5B50;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">category</Config>
+  <Config Name="CRON_AUTO_CATEGORY" Target="CRON_AUTO_CATEGORY" Default="" Mode="" Description="&#x81EA;&#x52A8;&#x5206;&#x7C7B;&#x7684;cron&#xFF0C;&#x5728;&#x8BBE;&#x5B9A;&#x7684;cron&#x8FD0;&#x884C;auto-cat -a&#x547D;&#x4EE4;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x672A;&#x5206;&#x7C7B;&#x79CD;&#x5B50;&#x6309;tracker&#x5206;&#x7C7B;&#xFF08;&#x5F53;CATEGORY_OR_TAG=category&#x65F6;&#xFF09;&#xFF0C;&#x6216;&#x5C06;&#x6240;&#x6709;&#x79CD;&#x5B50;&#x6309;tracker&#x6253;&#x6807;&#x7B7E;&#xFF08;&#x5F53;CATEGORY_OR_TAG=tag&#x65F6;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x79CD;&#x5B50;&#x5F88;&#x591A;&#x7684;&#x5927;&#x6237;&#x4EBA;&#x5BB6;&#xFF0C;&#x5EFA;&#x8BAE;&#x628A;cron&#x9891;&#x7387;&#x4FEE;&#x6539;&#x4F4E;&#x4E00;&#x4E9B;&#xFF0C;&#x4E00;&#x5929;&#x4E00;&#x6B21;&#x5373;&#x53EF;&#x3002;&#x6B64;cron&#x53EF;&#x4EE5;&#x7531;ENABLE_AUTO_CATEGORY&#x5173;&#x95ED;&#xFF0C;&#x5173;&#x95ED;&#x540E;&#x4E0D;&#x751F;&#x6548;&#x3002;&#x867D;&#x7136;&#x672C;&#x53D8;&#x91CF;&#x662F;&#x5168;&#x7248;&#x672C;&#x6709;&#x6548;&#xFF0C;&#x4F46;&#x63A7;&#x5236;&#x91C7;&#x7528;&#x201C;&#x5206;&#x7C7B;&#x201D;&#x8FD8;&#x662F;&#x201C;&#x6807;&#x7B7E;&#x201D;&#x7684;&#x53D8;&#x91CF;CATEGORY_OR_TAG&#x4EC5;4.3.9&#x548C;4.5.0+&#x6709;&#x6548;" Type="Variable" Display="always" Required="false" Mask="false">32 */2 * * *</Config>
+  <Config Name="ENABLE_AUTO_CATEGORY" Target="ENABLE_AUTO_CATEGORY" Default="" Mode="" Description="4.3.7+&#x53EF;&#x7528;&#x3002;&#x662F;&#x5426;&#x81EA;&#x52A8;&#x6309;tracker&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;true&#x5F00;&#x542F;&#xFF08;&#x4ECE;4.6.5+&#x8D77;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false&#xFF0C;4.6.4-&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;true&#xFF09;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="IYUU_REPO_URL" Target="IYUU_REPO_URL" Default="" Mode="" Description="&#x6307;&#x5B9A;&#x4ECE;&#x54EA;&#x91CC;&#x83B7;&#x53D6;IYUUPlus&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;&#x4ECE;gitee&#x66F4;&#x65B0;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4ECE;github&#x66F4;&#x65B0;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;https://github.com/ledccn/IYUUPlus.git" Type="Variable" Display="always" Required="false" Mask="false">https://gitee.com/ledc/iyuuplus.git</Config>
+  <Config Name="EXTRA_PACKAGES" Target="EXTRA_PACKAGES" Default="" Mode="" Description="&#x5982;&#x679C;&#x521A;&#x521A;&#x4E0B;&#x8F7D;&#x7684;&#x89C6;&#x9891;&#x4E2D;&#x5B58;&#x5728;&#x4E2D;&#x6587;&#x5B57;&#x5E55;&#xFF0C;&#x662F;&#x5426;&#x5C06;chinesusubfinder&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;&#x8BBE;&#x7F6E;&#x4E3A;&#x5FFD;&#x7565;&#xFF0C;&#x5373;&#x53D6;&#x6D88;&#x5B57;&#x5E55;&#x4E0B;&#x8F7D;&#xFF0C;&#x5982;&#x9700;&#x8981;&#x53D6;&#x6D88;&#xFF0C;&#x8BF7;&#x8BBE;&#x7F6E;&#x4E3A;true" Type="Variable" Display="always" Required="false" Mask="false">htop nano nodejs mediainfo</Config>
+  <Config Name="Host Port 2" Target="" Default="59862" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">59862</Config>
+  <Config Name="Host Port 3" Target="" Default="59862" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">59862</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Path /data" Target="/data" Default="" Mode="rw" Description="QB&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x91CC;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x5373;&#x53EF;" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/qBittorrent-Pt/data</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; QB &#x7684;&#x7528;&#x6237;&#x6743;&#x9650;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="&#x8FD0;&#x884C; QB &#x7684;&#x7528;&#x6237;&#x7EC4;&#x6743;&#x9650;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Mode="" Description="&#x6743;&#x9650;&#x63A9;&#x7801;" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

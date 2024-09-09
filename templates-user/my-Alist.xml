@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Alist</Name>
+  <Repository>xhofe/alist:latest</Repository>
+  <Registry>https://hub.docker.com/r/xhofe/alist</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Xhofe/alist/issues</Support>
+  <Project>https://github.com/Xhofe/alist</Project>
+  <Overview>A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and React. English documents are translated using Google.You can click the Edit this page button below to help improve the translation&#xD;
+&#xD;
+Important: Initial password in the log.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5244]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Alist_B.png</Icon>
+  <ExtraParams>--log-opt max-size=2m --log-opt max-file=3</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725507257</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI Port" Target="5244" Default="5244" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Data Path" Target="/opt/alist/data" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/Alist/</Config>
+</Container>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CloudDrive</Name>
+  <Repository>cloudnas/clouddrive2:latest</Repository>
+  <Registry>https://hub.docker.com/r/cloudnas/clouddrive2</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project>https://www.clouddrive2.com/</Project>
+  <Overview>CloudDrive is a powerful multi-cloud drive management tool, providing users with a one-stop multi-cloud drive solution that includes local mounting of cloud drives&#xD;
+Unraid&amp;amp;CloudDrive&#x4F7F;&#x7528;&#x7B54;&#x7591;&#x56E2;&#x8D2D;&#x8BF7;&#x6DFB;&#x52A0;WeChat: anpple</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:19798]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/cloud-fs/unraid-templates/master/clouddrive.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Cloudrive_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725785384</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="19798" Default="" Mode="tcp" Description="&#x9ED8;&#x8BA4;&#x7BA1;&#x7406;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="false">19798</Config>
+  <Config Name="&#x914D;&#x7F6E;&#x53D8;&#x91CF;" Target="CLOUDDRIVE_HOME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/Config</Config>
+  <Config Name="Custom MountPoint" Target="/CloudNAS" Default="" Mode="rw,shared" Description="&#x81EA;&#x5B9A;&#x4E49;&#x4E91;&#x76D8;&#x6302;&#x8F7D;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/addons/</Config>
+  <Config Name="Config Dir" Target="/Config" Default="/mnt/cache/appdata/CloudDrive" Mode="rw" Description="&#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/CloudDrive/Config</Config>
+  <Config Name="/dev/fuse" Target="" Default="" Mode="" Description="Fuse&#x8BBE;&#x5907;" Type="Device" Display="always" Required="true" Mask="false">/dev/fuse</Config>
+  <Config Name="Host Path 3" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk2/media/</Config>
+</Container>

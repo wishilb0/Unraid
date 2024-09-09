@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>115-MediaLibSync</Name>
+  <Repository>ilovn/media_library_sync:latest</Repository>
+  <Registry>https://hub.docker.com/r/ilovn/media_library_sync/tags</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ilovn/media_library_sync/tags</Support>
+  <Project>https://hub.docker.com/r/ilovn/media_library_sync/tags</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.1.100:8089/uploads/2024/9/4/media_library_sync.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725619115</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="&#x6570;&#x636E;&#x5E93;" Target="/usr/src/app/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-MediaLibSync/db</Config>
+  <Config Name="Host Path 3" Target="/etc/localtime" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="&#x6839;&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/mnt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt</Config>
+  <Config Name="&#x751F;&#x6210;strm&#x7684;&#x94FE;&#x63A5;&#x670D;&#x52A1;&#x5730;&#x5740;" Target="FILE_SITE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.100:8756</Config>
+  <Config Name="emby&#x670D;&#x52A1;&#x5730;&#x5740;,&#x7528;&#x4E8E;&#x901A;&#x77E5;strm&#x751F;&#x6210;,&#x5C40;&#x90E8;&#x626B;&#x5E93;" Target="EMBY_SITE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.100:6909</Config>
+  <Config Name="EMBY_TOKEN" Target="EMBY_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">294574c6c1e64031a2e816cca09ecfa6</Config>
+  <Config Name="strm&#x751F;&#x6210;&#x7684;&#x6302;&#x8F7D;&#x5730;&#x5740;" Target="STRM_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/mnt/cache/appdata/strm/115/Media1</Config>
+  <Config Name="&#x662F;&#x5426;&#x8986;&#x76D6;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;" Target="OVERWRITE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="&#x662F;&#x5426;&#x751F;&#x6210;nfo" Target="NEED_NFO" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="&#x662F;&#x5426;&#x751F;&#x6210;&#x56FE;&#x7247;&#x6570;&#x636E;" Target="NEED_IMAGE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="&#x4EFB;&#x52A1;&#x95F4;&#x9694;&#x65F6;&#x95F4;,&#x5206;&#x949F;" Target="JOB_INTERVAL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="&#x9884;&#x671F;&#x626B;&#x63CF;&#x7684;&#x8DEF;&#x5F84;,|&#x5206;&#x5272;" Target="SCAN_DIRS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/Media1</Config>
+  <Config Name="Host Path 4" Target="/usr/src/app/115-cookies.txt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-MediaLibSync/115-cookies.txt</Config>
+  <Config Name="REPLACE_STRM_PATH" Target="REPLACE_STRM_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/strm/115</Config>
+  <Config Name="INTERVAL_COUNT" Target="INTERVAL_COUNT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="INIT_QUICK_SCAN" Target="INIT_QUICK_SCAN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="USE_115_LIFE" Target="USE_115_LIFE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="USE_DIR_TREE" Target="USE_DIR_TREE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="Host Path 5" Target="/usr/src/app/115-life-cookies.txt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/115-MediaLibSync/115-cookies.txt</Config>
+  <Config Name="EMBY_PATH_REPLACE" Target="EMBY_PATH_REPLACE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">&#x201C;/&#x201D;</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>

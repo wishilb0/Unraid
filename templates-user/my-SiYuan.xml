@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SiYuan</Name>
+  <Repository>b3log/siyuan</Repository>
+  <Registry>https://hub.docker.com/r/b3log/siyuan</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/115144-support-siyuan/?tab=comments#comment-1046787</Support>
+  <Project>https://github.com/siyuan-note/siyuan/blob/master/README_en_US.md</Project>
+  <Overview>SiYuan is a local-first personal knowledge management system, support fine-grained block-level reference and Markdown WYSIWYG.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:6806]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Tech-Weasel/Unraid_Templates/master/SIYuan/SIYuan.xml</TemplateURL>
+  <Icon>http://192.168.1.100:8089/uploads/2024/09/05/Siyuan_A.png</Icon>
+  <ExtraParams>-u 1000:1000</ExtraParams>
+  <PostArgs>--accessAuthCode=565287449 --workspace=/siyuan/workspace/ </PostArgs>
+  <CPUset/>
+  <DateInstalled>1725508295</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI" Target="6806" Default="6806" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">6806</Config>
+  <Config Name="AppData Config Path" Target="/siyuan/workspace" Default="/mnt/user/appdata/SiYuan/workspace" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/SiYuan/workspace</Config>
+</Container>
